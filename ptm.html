@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 200px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #ddd;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #9cf0b9 ;
+  opacity: 0.8;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:15px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+	background-color: #6495ed;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {background-color: #afeeee;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ADD8E6;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #f1f1f1;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1> Parent Portal</h1>
+  <p>Go change the world.</p>
+</div>
+
+<div class="navbar">
+  <a href="good.html">Home</a>
+  <a href="#">Help</a>
+ <!-- <a href="#">About</a> -->
+  <a href="Homepage.html" class="right">Signout</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Profile</h2>
+    <p>Name : Dwight Schrute </p>
+    <div class="fakeimg" style="height:125px; width:100px"><center><img src="img.png" width="75" height="100"></img></center></div>
+    <p>Section: 6B </p>
+	<p>Dept : ECE </p>
+     <h3>Quick Links</h3> 
+     <div class="vertical-menu"><a href="good.html">About</a></div><br>
+    <div class="vertical-menu"><a href="academic.html">Academic Performance</a></div><br>
+    <div class="vertical-menu"><a href="timetable.html">Timetable</a></div><br>
+	  <div class="vertical-menu"><a href="attendance.html">Attendance</a></div><br>
+	  <div class="vertical-menu"><a href="certificates.html">Certifications</a></div><br>
+    <div class="vertical-menu"><a href="fees.html">Fees</a></div><br>   
+    <div class="vertical-menu"><a href="ptm.html">PTM schedule</a></div><br>	
+    <div class="vertical-menu"><a href="parentform.html">Parent concern form</a></div><br>   
+  </div>
+<div class="main">
+  <h2>PTM SCHEDULE</h2>
+  <p></p>
+  <table>
+    <tr>
+      <th>SCHEDULED DATES</th>
+      <th>STATUS</th>
+
+    </tr>
+    <tr>
+      <td>21 JANUARY 2020</td>
+      <td>ATTENDED</td>
+    </tr>
+    <tr>
+      <td>24 MARCH 2020</td>
+      <td>NOT-ATTENDED</td>
+    </tr>
+    <tr>
+      <td>17 APRIL 2020</td>
+      <td>-</td>
+    </tr>
+  </table>
+  <br>
+  <p><b>TIMINGS : 9AM-12.30PM</b></p>
+  <br>
+  <table>
+    <tr>
+      <th> MEETING DETAILS</th>
+      <th>TIMINGS</th>
+      <th>VENUE</th>
+    </tr>
+    <tr>
+      <td>
+       PRINICIPAL TALK 
+      </td>
+      <td>9AM-10AM</td>
+      <td> BIO-TECH AUDITORIUM</td>
+    </tr>
+    <tr>
+      <td>
+       GENERAL MEET WITH RESPECTIVE TEACHERS 
+      </td>
+      <td>10AM-5PM</td>
+      <td>EC-220(6-B)</td>
+    </tr>
+ 
+  </table>
+
+<br>
+<h2>PTM appointment form for 17Th APRIL</h2>
+<p>Please opt the the time that is more convinient to you.</p>
+<p></p>
+<br>
+<br>
+
+<button class="open-button" onclick="openForm()">10:00-12:00 batch</button>
+
+<div class="form-popup" id="myForm">
+  <form action="" class="form-container" onsubmit="warn()">
+    <h4><b>Choose a time you are convinient with</b></h4>
+    <br>
+    <br>
+
+
+    <label for="appt"><b> </b></label>
+    <input type="time" id="appt" name="appt" min = "10:00" max= "12:00" required>
+    <br>
+    <br>
+    <br>
+
+   
+    <button type="submit" class="btn" >Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+<br>
+<br>
+<br>
+
+
+
+<button class="open-button" onclick="openForm1()">1:00-3:00 batch</button>
+
+<div class="form-popup" id="myForm1">
+  <form action="" class="form-container" onsubmit="warn()">
+    <h4><b>CHOOSE A TIME YOU ARE CONVINIENT WITH.</b></h4>
+    <br>
+    <br>
+    
+
+    <label for="appti"><b> </b></label>
+    <input type="time" id="appti" name="appti" min = "1:00" max= "3:00" required>
+    <br>
+    <br>
+    <br>
+
+   
+    <button type="submit" class="btn" >Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+  </form>
+</div>
+<br>
+<br>
+<br>
+
+<button class="open-button" onclick="openForm2()">3:00-5:00 batch</button>
+
+<div class="form-popup" id="myForm2">
+  <form action="" class="form-container" onsubmit="warn()">
+    <h4><b>CHOOSE A Time your convinient with</b></h4>
+    <br>
+    <br>
+    
+
+    <label for="appt"><b> </b></label>
+    <input type="time" id="appt" name="appt" min = "3:00" max= "5:00" required>
+    <br>
+    <br>
+    <br>
+
+   
+    <button type="submit" class="btn"  >Submit</button>
+    <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+  </form>
+</div>
+
+<script>
+function warn()
+{
+  alert("Are you sure ? ");
+  alert("Your appointment is confirmed .");
+}
+ 
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+
+function openForm2() {
+  document.getElementById("myForm2").style.display = "block";
+}
+
+function closeForm2() {
+  document.getElementById("myForm2").style.display = "none";
+}
+
+</script>
+
+  
+</div>
+</div>
+</body>
+</html>

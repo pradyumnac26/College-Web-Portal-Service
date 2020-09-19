@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #ADD8E6;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #f1f1f1;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <h1>Lecturer Portal</h1>
+</div>
+
+<div class="navbar">
+  <a href="main_page.html">Home</a>
+  <a href="#">Help</a>
+ <!-- <a href="#">About</a> -->
+  <a href="Homepage.html" class="right">Signout</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Profile</h2>
+    <p>Name :  Dr.Hari Prasad </p>
+    <div class="fakeimg" style="height:125px; width:100px"><center><img src="C:\Users\LENOVO\Desktop\img.png" width="75" height="100"></img></center></div>
+	<p>Dept : ECE </p>
+     <h3>Quick Links</h3> 
+    <div class="vertical-menu"><a href="main_page.html">About</a></div><br>
+    <div class="vertical-menu"><a href="Timetable_d.html">Timetable</a></div><br>
+    <div class="vertical-menu"><a href="publications.html">Publications</a></div><br>
+    <div class="vertical-menu"><a href="Researchprojects.html">Patents/Projects</a></div><br>
+    <div class="vertical-menu"><a href="awardstalks.html">Awards</a></div><br> 
+    <div class="vertical-menu"><a href="meetingschedule.html">Meetings</a></div><br>
+    <div class="vertical-menu"><a href="complaint.html">Report</a></div><br>><br>  
+  </div>
+  <div class="main">
+    <h2>PUBLICATION DETALS:</h2>
+    </br>
+
+    <h3>INTERNATIONAL JOURNALS:</h3>
+    <ol type="1">
+      <em><small><li>Hari Prasad,Roopa J,Amith M Ugargool, “Parallel Hardware Architecture for Implementation of High Speed MAC”. International Journal of Public Health Research and Development, Vol 9, Issue 11, November 2018,ISSH:0976-5506, pp 33-38.</li>
+      <li>Hari Prasad, Roopa J, “Smart Pantry Management System for Kitchen”, August 2018, International Journal of Engineering and technology.</li>
+      <li>Hari Prasad, Uma B.V, “Phase Noise Reduction in WLAN by Applying Wavelet Packet Multiplexing”, Journal of Communication Engineering & Systems (JoCES), STM Journals, Volume 7, Issue 3, ISSN: 2249-8613 (Online), pp 8-15, December 2017.</li>
+      <li>Hari Prasad,Uma B V, “Modelling & Analysing Effects of Phase Noise in OFDM based DVB-T”, International Journal of Applied Engineering Research, Volume 10, November 16, 2015, ISSN:0973-4564, 36751-36755</li>
+      <li>Vishwas H P, Sreekar, Suhbodh, Sreekanth, Sathvik, Roopa J, Hari Prasad, “Public Transport Assistant for Visually Impaired (PuTAVI)”, International Journal of Advanced Research in Computer and Communication Engineering, Vol. 3, Issue 11, November 2014,ISSN (Online) : 2278-1021, ISSN (Print) : 2319-5940 Impact Factor:1.770</li>
+      <li>Praveen R, Hari Prasad, “Performance Comparison of Random Subcarrier Access & Spectrum Harvesting with ARQ Retransmission and Probing Type of Cognitive Radio Networks”, International Journal of Advanced Research in Computer and Communication Engineering, Volume 3, Issue 6, June 2014, ISSN (Online): 2278 – 1021 Impact Factor:1.770</li>
+      <li>Roopa J, Hari Prasad, M.Sai Suchandan Reddy, A.Parmesh, R.Mahesh, “Osteoporosis Detection by Impulse Response Technique”, International Journal of Advanced Research in Computer and Communication Engineering, Vol. 3, Issue 3, March 2014,ISSN (Online) : 2278-1021 ISSN (Print) : 2319-5940, Pg no: 5255-5257. Impact Factor:1.770</li>
+      <li>Roopa J, Hari Prasad, Ullas B S, Anush S, “Machine to Machine Communication for Smart Systems using MQTT”, International Journal of Advanced Research in Electrical, Electronics and Instrumentation Engineering Vol. 3, Issue 3, March 2014 ISSN (Print): 2320 – 3765 ISSN (Online): 2278 – 8875, Pg No: 8242 -8248. Impact Factor:1.686</li>
+      <li>Hari Prasad, Roopa J, Ramavenkateswaran N, “Smart Traffic Congestion Control using Wireless Communication”, International Journal of Advanced Research in Computer and Communication Engineering Vol 2, Issue 9, ISSN-2319-5940, September 2013 Impact Factor:1.770</li>
+      <li>Hari Prasad, Uma B.V,” Design & Simulation of Wavelet OFDM with Wavelet Denoising on AWGN Channel”, International Journal of Advanced Research in Computer and Communication Engineering Vol 2, Issue 8, ISSN-2319-5940, PP 3015-3018, August 2013. Impact Factor:1.770</li>
+      <li>Hari Prasad, Roopa J, “Design & Implementation of closed PID mechanism for wire tension control in winding machine”, International Journal of Instrumentation, Control and Automation (IJICA), Pg. 37-42, ISSN: 2231-1890,2011 Impact Factor:1.065</li></small></em>
+    </ol>
+
+    <h3>INTERNATIONAL CONFERENCES :</h3>
+    <ol type="1">
+      <em><small><li>Hari Prasad,Roopa J, Santhosh AR, “Smartphone Application for Silkworm Egg Detection and Counting”, International Conference on Innovations in Engineering, Technology and Sciences-2018, NIE Institute of Technology, Mysore, 20-21 September 2018.</li>
+      <li>Hari Prasad, Roopa J, “Smart Pantry Management System for Kitchen”, International conference on Materials, Applied Physics and Engineering (ICMAE-2018), 3rd- 4th June 2018, IIT Indore.(Cited in International Journal for Engineering and Technology).</li>
+      <li>Vellampati Harathi, Hari Prasad, “Implementation of performance improved controller for SoC”, IEEE international conference on Intelligent Computing and Control, Karpagam College of Engineering, Tamilnadu, India, 23-24 June 2017.</li>
+      <li>Sharadha Jogandhar, Hari Prasad, “Bluetooth Low Energy Packet Sniffer”, IEEE international conference on Intelligent Computing and Control, Karpagam College of Engineering, Tamilnadu, India, 23-24 June 2017.</li>
+      <li>Koushik B, Roopa J, Hari Prasad, B S Satyanarayana, Manohar, Biswajit Roy “Design of Prosthetic Arm and Signal Condition & Acquisition System for EMG Signals”, 3rd Springer International Conference on computer & Communication Technologies, MIC College of Engineering, Vijayawada, 5th-6th November 2016</li>
+      <li>Hari Prasad, Uma B V, “A Wavelet Multiplexing Method to reduce Effects of Phase Noise in OFDM based DVB-T”, 6th International Conference in Advances in Computing & Communications, September 2016, Cochin, India, (Elsevier Conference)</li>
+      <li>Hari Prasad, Uma B V,A Satish, ”Analysis of Performance of DWT based OFDM for WLAN in the presence of Phase Noise”, IEEE 2016 International conference on innovations in Information , Embedded & Communication System, Coimbatore, India.</li>
+      <li>Hari Prasad, Uma B V, Yadunandan, “Modelling & Analyzing Effects of Phase Noise in OFDM”, IEEE International Conference on Electronics, Electrical, Signals, Communication & Optimization (EESCO-2015),24th-25th January 2015, Vignan’s Institute of Information Technology, Vizag, pg.1131-1135.</li>
+      <li>Dheeraj Yadav, Nivas K A, Pratheek P, Pranav Neeli, Roopa J, Hari Prasad “Development and characterization of polypyrrole thin films and design of LPG leak detection system”, 27th - 28th April 2014 Munnar, Kerala, India.</li>
+      <li>Roopa J, Hari Prasad, Radha.H.G, Himaprabha. S, Lakshmi Bramhini. S, Kanya. B.S, “GSM Based Cubicle Security System”, International Conference on Advance Engineering & Technology (ICAET), 23rd March, 2014, Bangalore ISBN No.: 978-3-642-24819-5, Pg No: 70 – 73</li>
+      <li>Hari Prasad, B V Uma, “Design & Simulation of Wavelet OFDM with Wavelet Denoising on AWGN Channel”, International Conference on Convergence of Science, Engineering & Management in Education and Research-A Global Perspective, 26th -27th September 2013, Dayananada Sagar Collge of Engineering, Bangalore</li>
+      <li>Hari Prasad, Roopa J, “Design and Implementation of DSP based Controller Card for Automatic Coil Winding Machine”, International Conference on Controls and Instrumentation Technology(CISCON-2011), 3rd -6th Nov 2011, MIT, Manipal</li>
+      <li>Hari Prasad, Roopa J, “Design & Implementation of Closed Loop PID Mechanism for wire Tension Control (Tensioner) in Winding Machine”, International Conference on Control, Communication and Computer Technology (CCCT 2011) , August 6th - 7th 2011, VITS Delhi - NCR Hotel, Anand Vihar, ISBT Delhi</li></small></em>
+    </ol>
+  </div>
+</div>
+</body>
+</html>
+

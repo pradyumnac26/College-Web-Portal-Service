@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+	background-color: #6495ed;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {background-color: #afeeee;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ADD8E6;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #f1f1f1;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+ @media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1>Parent Portal</h1>
+  <p>Go change the world.</p>
+</div>
+
+<div class="navbar">
+  <a href="good.html">Home</a>
+  <a href="#">Help</a>
+ <!-- <a href="#">About</a> -->
+  <a href="Homepage.html" class="right">Signout</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Profile</h2>
+    <p>Name : Dwight Schrute </p>
+    <div class="fakeimg" style="height:125px; width:100px"><center><img src="img.png" width="75" height="100"></img></center></div>
+    <p>Section: 6B </p>
+	<p>Dept : ECE </p>
+     <h3>Quick Links</h3> 
+     <div class="vertical-menu"><a href="good.html">About</a></div><br>
+    <div class="vertical-menu"><a href="academic.html">Academic Performance</a></div><br>
+    <div class="vertical-menu"><a href="timetable.html">Timetable</a></div><br>
+	  <div class="vertical-menu"><a href="attendance.html">Attendance</a></div><br>
+	  <div class="vertical-menu"><a href="certificates.html">Certifications</a></div><br>
+    <div class="vertical-menu"><a href="fees.html">Fees</a></div><br>   
+    <div class="vertical-menu"><a href="ptm.html">PTM schedule</a></div><br>	 
+    <div class="vertical-menu"><a href="parentform.html">Parent concern form</a></div><br>   
+  </div>
+<div class="main">
+    <h2>FEE STRUCTURE</h2>
+    <p>The fees for all the previous semesters have been paid </p>
+    <p><b>NO DUES</b></p>
+    <br>
+
+     <p><b>DIRECTLY JUMP TO   <a href="#mess"><button>PAYEMENT PORTAL</button></a></b></p>
+<p>Go to the <a href="#Lorem_Ipsum">top</a>.</p>
+
+
+   <p> The following academic fee structure is for the year 2020-2021</p>
+<p></p>
+<br>
+<br>
+
+   <table align="center">
+   	<caption>ACADEMIC FEE STRUCTURE</caption>
+   	<tr>
+   		<th>SL.NO</th>
+   		<th>Particulars</th>
+   		<th>Amount</th>
+   	</tr>
+   	<tr>
+   		<td>1</td>
+   		<td>Tution fee</td>
+   		<td>30,000.00</td>
+    </tr>
+    <tr>
+    	<td>2</td>
+    	<td>Infrastructure fee</td>
+    	<td>8,000.00</td>
+    </tr>
+    <tr>
+   		<td>3</td>
+   		<td>Lab fee</td>
+   		<td>3,000.00</td>
+    </tr>
+    <tr>
+   		<td>4</td>
+   		<td>Library fee</td>
+   		<td>2,500.00</td>
+    </tr>
+    <tr>
+   		<td>5</td>
+   		<td>Exam fee</td>
+   		<td>2,100.00</td>
+    </tr>
+    <tr>
+   		<td>6</td>
+   		<td>Wifi fee</td>
+   		<td>1700.00</td>
+    </tr>
+    <tr>
+   		<td>7</td>
+   		<td>Medical fee</td>
+   		<td>700.00</td>
+    </tr>
+    <tr>
+   		<td>8</td>
+   		<td>Sports fee</td>
+   		<td>1300.00</td>
+    </tr>
+    <tr>
+   		<td>9</td>
+   		<td>Gym fee</td>
+   		<td>1600.00</td>
+    </tr>
+    <tr>
+   		<td>10</td>
+   		<td>Development fee</td>
+   		<td>3,000.00</td>
+    </tr>
+    <tr>
+   		<td>11</td>
+   		<td>Other fee</td>
+   		<td>1,000.00</td>
+    </tr>
+    <tr>
+   		<td></td>
+   		<td><b>GRAND TOTAL</b></td>
+   		<td>51,400.00</td>
+    </tr>
+   </table>
+   <br>
+   <br>
+  
+
+
+
+
+
+   <p><strong>The last date for the payment of academic fees for the year 2020-2021 is 21 AUG 2020.</strong></p>
+   <br>
+
+   <h2>HOSTEL FEES</h2>
+   <p>The Hostel fees for all the previous semesters have been paid </p>
+   <p><b>NO DUES</b></p>
+   <br>
+   <p></p>
+   <p>The following is the hostel fee structure for the year 2020-2021</p>
+   <br>
+   <br>
+<table align="center">
+	<caption align="center">HOSTEL FEE STRUCTURE</caption>
+   	<tr>
+   		<th>SL.NO</th>
+   		<th>Particulars</th>
+   		<th>Amount</th>
+   	</tr>
+   	<tr>
+   		<td>1</td>
+   		<td> Mess charges</td>
+   		<td>72,000.00</td>
+    </tr>
+    <tr>
+   		<td>2</td>
+   		<td>Electricity Charges(with AC)</td>
+   		<td>10,000.00</td>
+    </tr>
+    <tr>
+   		<td>3</td>
+   		<td>Security charges</td>
+   		<td>1,000.00</td>
+    </tr>
+    <tr>
+   		<td></td>
+   		<td><b>GRAND TOTAL</b></td>
+   		<td>83,000.00</td>
+    </tr>
+</table>
+<br>
+<p><strong>The last date for the payment of Hostel fees for the year 2020-2021 is 14 SEPT 2020.</strong></p>
+<br>
+<br>
+
+<h2>PENALTY (if not submitted on time)</h2>
+<br>
+<table align="center">
+	<caption align="center">INCREMENTAL FEES (if not paid before the due date)</caption>
+<tr>
+	<th>Number of days after due date</th>
+	<th>Academic fees</th>
+	<th>Hostel fees</th>
+</tr>
+<tr>
+   		<td>Before 7 days after the due date</td>
+   		<td> + 5 %</td>
+   		<td>+ 2 %</td>
+    </tr>
+    <tr>
+   		<td>Before 14 days after due date</td>
+   		<td> + 10 %</td>
+   		<td>+ 4 %</td>
+    </tr>
+    <tr>
+   		<td>Before 21 days after the due date</td>
+   		<td> +15 %</td>
+   		<td>+ 8 %</td>
+    </tr>
+</table>
+<br>
+<p>If its not paid even after the plus 21 days after the due date then <b>FURTHER STRICT ACTION MIGHT BE TAKEN</b></p>
+<br>
+<br>
+
+<h3 id="mess">ONLINE FEE PAYEMENT</h3>
+<p > For paying the fees online : </p>
+   <p>Please click on the following link to go to the payement portal</p>
+   <br>
+   <br>
+
+   <a href="card.html"> <button><b>CLICK HERE FOR PAYEMENT Via credit card or debit card </b>  </button></a><br><br>
+   <a href="neft.html"><button><b>CLICK HERE FOR PAYEMENT via net-banking</b></button></a><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</body>
+</html>
+
+    

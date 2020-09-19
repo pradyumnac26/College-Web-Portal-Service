@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script language="JavaScript" type="text/javascript">
+
+    function validateForm(){
+  
+alert("Are you sure to submit?");
+
+}
+
+       function myFunction() {
+  document.getElementById("myForm").reset();
+}
+
+  </script>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ADD8E6;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #f1f1f1;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1> Parent Portal</h1>
+  <p>Go change the world.</p>
+</div>
+
+<div class="navbar">
+  <a href="good.html">Home</a>
+  <a href="#">Help</a>
+ <!-- <a href="#">About</a> -->
+  <a href="Homepage.html.html" class="right">Signout</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Profile</h2>
+    <p>Name : Dwight Schrute </p>
+    <div class="fakeimg" style="height:125px; width:100px"><center><img src="img.png" width="75" height="100"></img></center></div>
+    <p>Section: 6B </p>
+	<p>Dept : ECE </p>
+     <h3>Quick Links</h3> 
+     <div class="vertical-menu"><a href="good.html">About</a></div><br>
+    <div class="vertical-menu"><a href="academic.html">Academic Performance</a></div><br>
+    <div class="vertical-menu"><a href="timetable.html">Timetable</a></div><br>
+	  <div class="vertical-menu"><a href="attendance.html">Attendance</a></div><br>
+	  <div class="vertical-menu"><a href="certificates.html">Certifications</a></div><br>
+    <div class="vertical-menu"><a href="fees.html">Fees</a></div><br>   
+    <div class="vertical-menu"><a href="ptm.html">PTM schedule</a></div><br>	
+    <div class="vertical-menu"><a href="parentform.html">Parent concern form</a></div><br>   
+  </div>
+  <div class="main">
+    <h2>ISSUES REGARDING NON-ACADEMICS</h2>
+    <form action="">
+      <p>
+        <select name="issu">
+          <option>Fee</option>
+          <option>Food/Water</option>
+          <option>Infrastructure</option>
+          <option>Information</option>
+          <option>Personal details</option>
+          <option>Washroom</option>
+          <option>Dress code</option>
+          <option>Hostel related</option>
+          <option>Other</option>
+        </select>
+  </p>
+</form>
+<br>
+<br>
+
+<p>PLEASE PROVIDE THE DETAILS OF THE CONCERN</p>
+ <form action = "handler" id="myForm" > 
+<p>
+<textarea name = "feedback"  rows = "15"  cols = "100" >
+         </textarea>      
+</p>   
+ </form> 
+ <form  action="thanks.html" onsubmit="validateForm()" > 
+  <p>    
+  <input type = "submit"  value = "Submit Form" />  
+    <input type = "reset"  value = "Reset Form" onclick="myFunction()" />  
+  </p> 
+  <br>
+  <p><b></b></p>
+  <p><b></b></p>
+</form>
+</div>
+</div>
+</body>
+</html>
+

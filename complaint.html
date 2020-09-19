@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ADD8E6;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ccc;
+  color: black;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #f1f1f1;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #ADD8E6;
+  color: white;
+}
+
+/* Main column */
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+.myform{
+	margin:0 auto;
+	width:400px;
+	padding:14px;
+}
+	/* ----------- basic ----------- */
+	#basic{
+		border:solid 2px #DEDEDE;	
+	}
+	#basic h1 {
+		font-size:14px;
+		font-weight:bold;
+		margin-bottom:8px;
+	}
+	#basic p{
+		font-size:11px;
+		color:#666666;
+		margin-bottom:20px;
+		border-bottom:solid 1px #dedede;
+		padding-bottom:10px;
+	}
+	#basic label{
+		display:block;
+		font-weight:bold;
+		text-align:right;
+		width:140px;
+		float:left;
+	}
+	#basic .small{
+		color:#666666;
+		display:block;
+		font-size:11px;
+		font-weight:normal;
+		text-align:right;
+		width:140px;
+	}
+	#basic input{
+		float:left;
+		width:200px;
+		margin:2px 0 30px 10px;
+	}
+	#basic button{ 
+		clear:both;
+		margin-left:150px;
+		background:#888888;
+		color:#FFFFFF;
+		border:solid 1px #666666;
+		font-size:11px;
+		font-weight:bold;
+		padding:4px 6px;
+	}
+
+
+	/* ----------- stylized ----------- */
+	#stylized{
+		border:solid 2px #b7ddf2;
+		background:#ebf4fb;
+
+	}
+	#stylized h1 {
+		font-size:14px;
+		font-weight:bold;
+		margin-bottom:8px;
+	}
+	#stylized p{
+		font-size:11px;
+		color:#666666;
+		margin-bottom:20px;
+		border-bottom:solid 1px #b7ddf2;
+		padding-bottom:10px;
+	}
+	#stylized label{
+		display:block;
+		font-weight:bold;
+		text-align:right;
+		width:140px;
+		float:left;
+	}
+	#stylized .small{
+		color:#666666;
+		display:block;
+		font-size:11px;
+		font-weight:normal;
+		text-align:right;
+		width:140px;
+	}
+	#stylized input{
+		float:left;
+		font-size:12px;
+		padding:4px 2px;
+		border:solid 1px #aacfe4;
+		width:200px;
+		margin:2px 0 20px 10px;
+	}
+	#stylized button{ 
+		clear:both;
+		margin-left:160px;
+		width:125px;
+		height:31px;
+		background:#444;
+		text-align:center;
+		line-height:31px;
+		color:#FFFFFF;
+		font-size:11px;
+		font-weight:bold;
+	}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1>Lecturer Portal</h1>
+</div>
+
+<div class="navbar">
+  <a href="main_page.html">Home</a>
+  <a href="#">Help</a>
+ <!-- <a href="#">About</a> -->
+  <a href="Homepage.html" class="right">Signout</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Profile</h2>
+    <p>Name : Dr.Hari Prasad</p>
+    <div class="fakeimg" style="height:125px; width:100px"><center><img src="C:\Users\LENOVO\Desktop\img.png" width="75" height="100"></img></center></div>
+	<p>Dept : ECE </p>
+     <h3>Quick Links</h3> 
+    <div class="vertical-menu"><a href="main_page.html">About</a></div><br>
+    <div class="vertical-menu"><a href="Timetable_d.html">Timetable</a></div><br>
+    <div class="vertical-menu"><a href="publications.html">Publications</a></div><br>
+    <div class="vertical-menu"><a href="Researchprojects.html">Patents/Projects</a></div><br>
+    <div class="vertical-menu"><a href="awardstalks.html">Awards</a></div><br> 
+    <div class="vertical-menu"><a href="meetingschedule.html">Meetings</a></div><br>
+    <div class="vertical-menu"><a href="complaint.html">Report</a></div><br>    
+  </div>
+  <div class="main">
+    <h2>Please report the complaint here</h2>
+	 
+	 <div id="stylized" class="myform">
+<h1><center> Student Misconduct Form</center></h1>
+<form id="form1" id="form1" action="reportcomplaint.php" method="POST">
+   <table>
+    <tr>
+    	<td><abbr title="Enter the usn of person here"><label>USN of the complainee</label></abbr></td>
+        <td> <input type="text" name="usn" required></td>
+    </tr>
+	<tr>
+    	<td><abbr title="Enter the name of person here"><label>Name of the complainee</label></abbr></td>
+        <td> <input type="text" name="name" required></td>
+    </tr>
+    <tr>
+    	<td><abbr title="Enter your college mail"><label>Email of complainant</label></abbr></td>
+        <td><input type="text" name="email" required></td>
+    </tr>
+
+    <tr>
+    	<td><abbr title="Priority Level"><label>Report To</label></abbr></td>
+        <td><select name="priority" size="1" required>
+            <option value="Low">HoD</option>
+            <option value="Normal">Dean Academics</option>
+            <option value="High">Dean Student Affairs</option>
+            <option value="Emergency">Anti Ragging Head</option>
+			<option value="TopEmergency">Principal</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+    	<td><label>Please address your complaint here :</label></td>
+        <td><textarea name="message" rows="6" cols="25" required></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+    <button type="submit" value="Send" style="margin-top:15px;">Submit</button>
+         </td>
+    </tr>
+    </table>
+<div class="spacer"></div>
+
+</form>
+</div>
+</div>
+</div>
+
+</body>
+</html>

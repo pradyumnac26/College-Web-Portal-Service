@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 200px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:15px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+	background-color: #6495ed;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {background-color: #afeeee;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: #ADD8E6;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #f1f1f1;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="header">
+  <h1> Parent Portal</h1>
+  <p>Go change the world.</p>
+</div>
+
+<div class="navbar">
+  <a href="good.html">Home</a>
+  <a href="#">Help</a>
+ <!-- <a href="#">About</a> -->
+  <a href="Homepage.html" class="right">Signout</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Profile</h2>
+    <p>Name : Dwight Schrute </p>
+    <div class="fakeimg" style="height:125px; width:100px"><center><img src="img.png" width="75" height="100"></img></center></div>
+    <p>Section: 6B </p>
+	<p>Dept : ECE </p>
+     <h3>Quick Links</h3> 
+     <div class="vertical-menu"><a href="good.html">About</a></div><br>
+    <div class="vertical-menu"><a href="academic.html">Academic Performance</a></div><br>
+    <div class="vertical-menu"><a href="timetable.html">Timetable</a></div><br>
+	  <div class="vertical-menu"><a href="attendance.html">Attendance</a></div><br>
+	  <div class="vertical-menu"><a href="certificates.html">Certifications</a></div><br>
+    <div class="vertical-menu"><a href="fees.html">Fees</a></div><br>   
+    <div class="vertical-menu"><a href="ptm.html">PTM schedule</a></div><br>	
+    <div class="vertical-menu"><a href="parentform.html">Parent concern form</a></div><br>   
+  </div>
+<div class="main">
+  <h2>PAYEMENT PORTAL</h2>
+  <h3>PAYEMENT VIA NEFT</h3>
+
+
+
+  <p><b> ESSENTIALS FOR PAYEMENT </b></p>
+
+  <br>
+  <p><b> BANK              :     SBI</b></p><br>
+  <p><b> IFSC CODE         :     SBIN0001537</b></p><br>
+  <p><b> BRANCH             :    BANGLORE</b></p><br>
+  <p><b> ACCOUNT NUMBER      :    012369756</b></p><br>
+</div>
+</div>
+</body>
+</html>

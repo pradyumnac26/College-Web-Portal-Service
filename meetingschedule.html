@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+  background-color: #6495ed;
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {background-color: #afeeee;}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: white;
+  color: black;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #ADD8E6;
+  color: white;
+}
+
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.vertical-menu {
+  width: 200px;
+}
+
+.vertical-menu a {
+  background-color: #f1f1f1;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 20%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 80%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div class="header">
+  <h1>RVCE Lecturer Portal</h1>
+  <p>Go change the world.</p>
+</div>
+
+<div class="navbar">
+  <a href="main_page.html">Home</a>
+  <a href="#">Help</a>
+ <!-- <a href="#">About</a> -->
+  <a href="Homepage.html" class="right">Signout</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Profile</h2>
+    <p>Name : Dr.Hari Prasad M </p>
+    <div class="fakeimg" style="height:125px; width:100px"><center><img src="C:\Users\LENOVO\Desktop\img.png" width="75" height="100"></img></center></div>
+   	<p>Dept : ECE </p>
+     <h3>Quick Links</h3> 
+    <div class="vertical-menu"><a href="main_page.html">About</a></div><br>
+    <div class="vertical-menu"><a href="Timetable_d.html">Timetable</a></div><br>
+    <div class="vertical-menu"><a href="publications.html">Publications</a></div><br>
+    <div class="vertical-menu"><a href="Researchprojects.html">Patents/Projects</a></div><br>
+    <div class="vertical-menu"><a href="awardstalks.html">Awards</a></div><br>
+    <div class="vertical-menu"><a href="meetingschedule.html">Meetings</a></div><br>
+    <div class="vertical-menu"><a href="complaint.html">Report</a></div><br>    
+  </div>
+  <div class="main">
+    <h1>MEETING SCHEDULE ON 16/4/2020</h1>
+    <h2>PTM SCHEDULE</h2>
+  <p></p>
+  <table>
+    <tr>
+      <th>SCHEDULED DATES</th>
+      <th>STATUS</th>
+
+    </tr>
+    <tr>
+      <td>21 JANUARY 2020</td>
+      <td>ATTENDED</td>
+    </tr>
+    <tr>
+      <td>24 MARCH 2020</td>
+      <td>NOT-ATTENDED</td>
+    </tr>
+    <tr>
+      <td>4 MAY 2020</td>
+      <td>-</td>
+    </tr>
+  </table>
+  <br>
+  <p><b>MEETINGS AT DUE</b></p>
+  <br>
+  <table>
+    <tr>
+      <th> MEETING DETAILS</th>
+      <th>TIMINGS</th>
+      <th>VENUE</th>
+    </tr>
+    <tr>
+      <td>
+        MEETING WITH PRINICIPAL
+      </td>
+      <td>9 AM</td>
+      <td>PRINCIPAL'S OFFICE</td>
+    </tr>
+    <tr>
+      <td>
+       GENERAL MEETING WITH HOD
+      </td>
+      <td>11:30 AM</td>
+      <td>ECE SEMINAR HALL</td>
+    </tr>
+    <tr>
+      <td>
+       PLACEMENT TALK BY CISCO 
+      </td>
+      <td>2:30 PM</td>
+      <td>IEM AUDITORIUM</td>
+    </tr>
+  </table>
+  </div>
+</div>
+
+</body>
+</html>

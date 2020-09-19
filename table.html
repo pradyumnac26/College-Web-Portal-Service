@@ -1,0 +1,83 @@
+<html>
+<head>
+<style>
+#graph
+{
+    position:relative;
+    width:660px;
+    height:216px;
+    margin:8px;
+    padding:0;	
+}
+#graph ul
+{
+    position:absolute;
+    top:0;
+    left:32px;
+    width:600px;
+    height:200px;
+    border-left:1px solid black;
+    border-bottom:1px solid black;	
+}
+#graph li
+{
+   position:absolute;	
+   list-style:none;
+   background:lightblue;
+   width:40px;
+   text-align:center;
+   border:1px solid black;
+   visibility: hidden;
+}
+
+</style>
+</head>
+<body>
+<ul>  
+  <li>30:2007:lightblue</li>
+  <li>40:2008:lightgreen</li>
+  <li>80:2009:yellow</li>
+  <li>14:2010:cyan</li>
+</ul>
+<div id="graph">
+  200<br /> <br /> <br /> 150 <br /> <br /> <br /> 100 <br /> <br /> <br /> 50
+<ul>
+    <li></li>
+     .....
+</ul>
+</div>
+<div id="labels">Years : </div>    
+<script>
+function makeGraph(container, labels)
+{
+    container = document.getElementById(container);
+    labels = document.getElementById(labels)
+    var dnl = container.getElementsByTagName("li");
+    for(var i = 0; i < dnl.length; i++)
+    {
+        var item = dnl.item(i);
+        var value = item.innerHTML;
+        var color = item.style.background=color;
+        var content = value.split(":");
+        value = content[0];
+        item.style.height=value + "px";
+        item.style.top=(199 - value) + "px";
+        item.style.left = (i * 50 + 20) + "px";
+        item.style.height = value + "px";
+        item.innerHTML = value;
+        item.style.visibility="visible";	
+        color = content[2];
+        if(color != false) item.style.background=color;
+        labels.innerHTML = labels.innerHTML +
+             "<span style='margin:8px;background:"+ color+"'>" + 
+             content[1] + "</span>";
+    }	
+}
+
+window.onload=function ()
+ { makeGraph("graph", "labels") 
+}
+</script>
+</body>
+</html>
+
